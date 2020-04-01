@@ -1,14 +1,21 @@
 *{
   list-style: none;
+  padding: 7px;
 }
 
 nav{
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   border: 1px solid red;
 }
 
 ul{
   display: flex;
+}
+
+.bar-hamburger{
+  display: none;
 }
 
 .nascondi{
@@ -17,4 +24,19 @@ ul{
 
 .mostra{
   display: block;
+}
+
+@media screen and (max-width: 1000px){
+  .bar-hamburger{
+    display: flex;
+  }
+
+  .nav-sinistra .personal-business{
+    display: none;
+  }
+
+  .nav-destra{
+    display: none;
+  }
+
 }
